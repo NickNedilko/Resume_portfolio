@@ -1,83 +1,82 @@
-.header{
-    width: 100%;
-    background-color: var(--color-light);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 100;
+.header {
+  width: 100%;
+  background-color: var(--color-light);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 }
 
-.nav{
-    height: calc(var(--header-height) + 1.5rem);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 3rem;
+.nav {
+  height: calc(var(--header-height) + 1.5rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 3rem;
 }
-.nav__logo{
-    font-size: var(--h2-font-size);
-    font-weight: var(--font-semi-bold);
-    letter-spacing: 0.125rem;
+.nav__logo {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-semi-bold);
+  letter-spacing: 0.125rem;
 }
-.nav__logo::after{
-    position: absolute;
-    content: ' ';
-    width: 0.3rem;
-    height: 0.3rem;
-    border-radius: 50%;
-    background-color: var(--color-primary);
-    top: 56%;
-    right: 61rem;
+// .nav__logo::after {
+//   position: absolute;
+//   content: ' ';
+//   width: 0.3rem;
+//   height: 0.3rem;
+//   border-radius: 50%;
+//   background-color: var(--color-primary);
+//   top: 56%;
+//   right: 69rem;
+// }
+
+.nav-menu {
+  margin-left: auto;
 }
 
-.nav-menu{
-    margin-left: auto;
+.nav-menu__list {
+  display: flex;
+  column-gap: 3rem;
 }
 
-.nav-menu__list{
-    display: flex;
-    column-gap: 3rem;
+.nav-menu__list__link {
+  font-weight: var(--font-medium);
+  transition: 0.3s;
 }
 
-.nav-menu__list__link{
-    font-weight: var(--font-medium);
-    transition: 0.3s;
+.nav-menu__list__link:hover {
+  color: var(--color-primary);
 }
 
-.nav-menu__list__link:hover{
-    color: var(--color-primary);
+.change-theme {
+  font-size: 1.15rem;
+  cursor: pointer;
 }
 
-.change-theme{
-   
-    font-size: 1.15rem;
-    cursor: pointer;
+.nav-btns {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
 }
 
-.nav-btns{
-    display: flex;
-    align-items: center;
-    column-gap: 1rem;
+.nav-toggle {
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+.nav-toggle {
+  display: none;
 }
 
-.nav-toggle{
-    font-size: 1.2rem;
-    cursor: pointer;
+.active-link {
+  position: relative;
 }
-.nav-toggle{
-    display: none;
-}
-
-.active-link{
-    position: relative;
-}
-.active-link::before{
-    content: ' ';
-    position: absolute;
-    background-color: var(--color-primary);
-    bottom: -0.75rem;
-    left: 45%;
-    height: 0.3rem;
-    width: 0.3rem;
-    border-radius: 50%;
+.active-link::before {
+  content: ' ';
+  position: absolute;
+  background-color: var(--color-primary);
+  bottom: -0.75rem;
+  left: 45%;
+  height: 0.3rem;
+  width: 0.3rem;
+  border-radius: 50%;
 }

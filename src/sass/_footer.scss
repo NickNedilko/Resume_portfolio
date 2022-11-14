@@ -1,0 +1,19 @@
+.footer {
+  padding: 60px 0;
+}
+
+.footer-text {
+  display: flex;
+  margin: 0;
+  justify-content: center;
+}
+
+.footer .social-icons {
+  //   font-size: 1.25rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer .lni:hover {
+  color: var(--color-primary);
+}
